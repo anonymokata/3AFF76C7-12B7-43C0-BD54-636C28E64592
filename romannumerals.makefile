@@ -1,5 +1,5 @@
 CFLAGS=-Wall
-LIBS=-lcheck
+LIBS=$(shell pkg-config --libs --cflags check) 
 
 all: romannumerals
 
